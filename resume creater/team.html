@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>About Team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+           
+            
+            
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: bisque;
+    
+        }
+
+
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 100px 50px;
+            padding: 100px 50px;
+        }
+
+        .container .custom-card {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 330px;
+            max-width: 100%;
+            height: 300px;
+            background: #ffffff;
+            border-radius: 20px;
+            transition: 0.5s;
+            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        }
+
+        .container .custom-card:hover {
+            height: 400px;
+        }
+
+        .container .custom-card .img-box {
+            position: absolute;
+            top: 20px;
+            width: 300px;
+            height: 220px;
+            background: #333;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .container .custom-card:hover .img-box {
+            top: -100px;
+            scale: 0.75;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        }
+
+        .container .custom-card .img-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       
+        .container .custom-card .custom-content {
+            position: absolute;
+            top: 252px;
+            width: 100%;
+            height: 35px;
+            padding: 0 30px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .container .custom-card:hover .custom-content {
+            top: 130px;
+            height: 250px;
+        }
+
+        .container .custom-card .custom-content h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333333;
+            padding-bottom: 25px;
+        }
+
+        .container .custom-card .custom-content p {
+            color: #333;
+        }
+
+        .container .custom-card .custom-content a {
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            background: #181818;
+            color: #fff;
+            font-weight: 500;
+        }
+        .logo1{
+            color: #1e2532;
+            font-weight: 600;
+            
+        }
+    .logo2{
+        gap: 10px;
+        color:#1a91f0;
+        font-weight: 600;
+      }
+        .container .custom-card .custom-content a:hover {
+            opacity: 0.8;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding: 5px;
+        }
+
+        .logo h3 {
+            padding-left: 9px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+   
+        
+        </style>
+</head>
+
+<body>
+  
+     <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.jpg.png" alt height="40px" width="40px">
+           
+            <p class="logo1">build</p>
+            <p class="logo2">resume.</p>
+      
+        </a>
+     </div>
+    
+    
+        <div class="container">
+            <div class="custom-card">
+                <div class="img-box"><img src="./images/meet.jpg"></div>
+                <div class="custom-content">
+                    <h1>meet vasoya</h1>
+                    <p>I,meet vasoya am a Developer of this website and also a student of Msc.IT at K.S. School of Bussiness Management & Information Technology.</p>
+                    <a href="index.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="custom-card">
+                <div class="img-box"><img src="./images/krupesh.jpg"></div>
+                <div class="custom-content">
+                    <h1>krupesh prajapati</h1>
+                    <p>I,krupesh prajapati am a Designer of this website and also a student of Msc.IT at K.S. School of Bussiness Management & Information Technology.</p>
+                    <a href="index.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="custom-card">
+                <div class="img-box"><img src="./images/viraj.jpg"></div>
+                <div class="custom-content">
+                    <h1>viraj panchal</h1>
+                    <p>I,viraj panchal am a Developer of this website and also a student of Msc.IT at K.S. School of Bussiness Management & Information Technology.</p>
+                    <a href="index.html">Read More</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
